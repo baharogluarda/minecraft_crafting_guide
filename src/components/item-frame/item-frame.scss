@@ -1,0 +1,47 @@
+.item-frame {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #4a4a4a; /* Arka plan rengi, resim yüklenmezse */
+  border: 2px solid #222;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+  margin: 5px; /* Item'lar arasındaki boşluğu azaltmak için */
+  background-size: cover; /* Resmi tam olarak kutuya sığdır */
+  background-position: center; /* Resmi kutunun ortasında konumlandır */
+  background-repeat: no-repeat; /* Resmin tekrar etmesini engelle */
+}
+
+.item-frame:hover {
+  transform: scale(1.1);
+}
+
+.item-frame.selected {
+  border: 2px solid #ff6347; /* Seçili öğeyi vurgulamak için */
+  background-color: #444;
+}
+
+/* `img` etiketi kaldırıldı, çünkü arka plan olarak kullanılacak */
+
+.item-name {
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
+.item-details {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.detail-image {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin-top: 10px;
+}

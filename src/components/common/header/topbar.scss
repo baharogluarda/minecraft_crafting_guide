@@ -6,7 +6,9 @@
   background-position: center;
   background-size: contain;
   height: 80px;
-
+  margin-bottom: 20px;
+  padding: 5px;
+  @include shadow("box", 0px 5px 15px black);
   @include flexbox(row, center, center, relative);
 
   .text_box {
