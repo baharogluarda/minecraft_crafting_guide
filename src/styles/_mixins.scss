@@ -32,6 +32,7 @@
   }
 }
 
+$vendors: ("", "-webkit-", "-moz-", "-ms-"); // Vendor prefixes tanımlandı
 
 @mixin borderRadius($radius) {
   @each $v in $vendors {

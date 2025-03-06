@@ -1,30 +1,22 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 import { Card } from "primereact/card";
 import "./craft-menu.scss";
 import { ItemFrame } from "../item-frame/item-frame";
 
+// categories/index.js üzerinden tüm kategorileri import et
+import { tools, basics, blocks, weapons } from "@/data/categories";
+
 export const CraftMenu = () => {
   const [selectedItem, setSelectedItem] = useState(null);
 
-  // Minecraft categories
+  // Minecraft kategorileri
   const categories = {
-    Tools: [
-      { name: "Wooden Pickaxe", img: "/images/wooden_pickaxe.png" },
-      { name: "Stone Axe", img: "/images/stone_axe.png" },
-    ],
-    Basics: [
-      { name: "Stick", img: "/images/stick.png" },
-      { name: "Wood Plank", img: "/images/wood_plank.png" },
-    ],
-    Blocks: [
-      { name: "Cobblestone", img: "/images/items/crafting_table_front.png" },
-      { name: "Brick Block", img: "/images/brick_block.png" },
-    ],
-    Weapons: [
-      { name: "Stone Sword", img: "/images/stone_sword.png" },
-      { name: "Bow", img: "/images/bow.png" },
-    ],
+    Tools: tools,
+    Basics: basics,
+    Blocks: blocks,
+    Weapons: weapons,
   };
 
   return (
@@ -34,10 +26,17 @@ export const CraftMenu = () => {
           {selectedItem && (
             <div className="item-details">
               <h3>{selectedItem.name}</h3>
-              <img
+              <Image
                 src={selectedItem.img}
                 alt={selectedItem.name}
+                width={120} // Genişlik
+                height={120} // Yükseklik
                 className="detail-image"
+                priority // Sayfa yüklenirken hemen yüklensin
+                unoptimized={
+                  selectedItem.img.endsWith(".gif") ||
+                  selectedItem.img.endsWith(".webp")
+                } // Animasyonlu görselleri optimize etme
               />
             </div>
           )}
@@ -55,7 +54,6 @@ export const CraftMenu = () => {
                       item={item}
                       isSelected={selectedItem === item}
                       onClick={() => setSelectedItem(item)}
-                      // `style` prop ile arka plan resmi veriliyor
                     />
                   ))}
                 </div>

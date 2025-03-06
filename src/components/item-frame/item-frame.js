@@ -7,7 +7,7 @@ export const ItemFrame = ({ item, onClick, isSelected }) => {
       className={`item-frame ${isSelected ? "selected" : ""}`}
       onClick={onClick}
       style={{
-        backgroundImage: `url(${item.img})`, // Arka plan olarak resmi burada veriyoruz
+        backgroundImage: `url(${item.img})`,
       }}
     ></div>
   );

@@ -1,0 +1,18 @@
+[
+  { "name": "Planks", "img": "/images/items/basics/planks.webp" },
+  { "name": "Stick", "img": "/images/items/basics/stick.webp" },
+  { "name": "Torch", "img": "/images/items/basics/torch.webp" },
+  { "name": "Crafting Table", "img": "/images/items/basics/crafting_table.png" },
+  { "name": "Chest", "img": "/images/items/basics/chest.webp" },
+  { "name": "Furnace", "img": "/images/items/basics/furnace.webp" },
+  { "name": "Ladder", "img": "/images/items/basics/ladder.webp" },
+  { "name": "Fence", "img": "/images/items/basics/fence.webp" },
+  { "name": "Boat", "img": "/images/items/basics/boat.webp" },
+  { "name": "Wooden Slabs", "img": "/images/items/basics/wooden_slab.webp" },
+  { "name": "Stone Slabs", "img": "/images/items/basics/stone_slab.webp" },
+  { "name": "Sign", "img": "/images/items/basics/sign.webp" },
+  { "name": "Doors", "img": "/images/items/basics/door.webp" },
+  { "name": "Painting", "img": "/images/items/basics/painting.webp" },
+  { "name": "Bed", "img": "/images/items/basics/bed.webp" },
+  { "name": "Wood", "img": "/images/items/basics/wood.webp" }
+]

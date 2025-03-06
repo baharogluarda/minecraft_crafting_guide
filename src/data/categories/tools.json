@@ -1,0 +1,23 @@
+[
+  { "name": "Pickaxes", "img": "/images/items/tools/pickaxe.webp" },
+  { "name": "Shovels", "img": "/images/items/tools/shovel.webp" },
+  { "name": "Axes", "img": "/images/items/tools/axe.webp" },
+  { "name": "Hoes", "img": "/images/items/tools/hoe.webp" },
+  { "name": "Fishing Rod", "img": "/images/items/tools/fishing_rod.webp" },
+  {
+    "name": "Flint and Steel",
+    "img": "/images/items/tools/flint_and_steel.webp"
+  },
+  { "name": "Shears", "img": "/images/items/tools/shears.webp" },
+  { "name": "Bucket", "img": "/images/items/tools/bucket.webp" },
+  { "name": "Clock", "img": "/images/items/tools/clock.webp" },
+  { "name": "Compass", "img": "/images/items/tools/compass.webp" },
+  { "name": "Map", "img": "/images/items/tools/map.webp" },
+  { "name": "Shulker Box", "img": "/images/items/tools/shulker_box.webp" },
+  { "name": "Spyglass", "img": "/images/items/tools/spyglass.webp" },
+  {
+    "name": "Recovery Compass",
+    "img": "/images/items/tools/recovery_compass.gif"
+  },
+  { "name": "Brush", "img": "/images/items/tools/brush.webp" }
+]
